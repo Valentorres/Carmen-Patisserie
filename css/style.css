@@ -1,0 +1,489 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+}
+
+.card_section .card {
+  margin-top: 19rem;
+}
+
+body h1 {
+  text-align: center;
+  padding-top: 7rem;
+}
+
+body .banner {
+  width: 100%;
+}
+
+body .banner .banner_img {
+  width: 100%;
+  height: 130vh;
+  background-image: url("../multimedia/background1.jpg");
+  background-size: cover;
+  margin-top: 8rem;
+}
+
+body .favoritos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em 0 5em 0;
+}
+
+body .favoritos .grid_container {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  -ms-grid-columns: (minmax(150px, 350px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+body .favoritos .grid_container h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+  grid-column: 1 / -1;
+  font-weight: 500;
+  text-align: center;
+  /*grid-row: span 3;  Me toma dos rows/filas, para no calcular los números de filas */
+}
+
+body .favoritos .grid_container .grid_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .favoritos .grid_container .grid_item .grid_item_img1 {
+  display: block;
+  max-width: 350px;
+  height: 300px;
+  overflow: hidden;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  cursor: pointer;
+}
+
+body .favoritos .grid_container .grid_item .grid_item_img2 {
+  display: block;
+  max-width: 350px;
+  height: 300px;
+  overflow: hidden;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  cursor: pointer;
+}
+
+body .favoritos .grid_container .grid_item .grid_item_img3 {
+  display: block;
+  max-width: 350px;
+  height: 300px;
+  overflow: hidden;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  cursor: pointer;
+}
+
+.container-fluid {
+  margin-top: 12rem;
+}
+
+body .container_contact {
+  background-color: beige;
+  width: 100%;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+body .container_contact .contact_content {
+  padding-top: 6rem;
+  display: Flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 15rem;
+}
+
+body .container_contact h2 {
+  font-size: 1rem;
+  font-style: bolder;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+body .container_contact .contact_form {
+  height: 50vh;
+  bottom: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 700px;
+  top: 2rem;
+}
+
+body .container_contact .h1_1 {
+  text-align: center;
+}
+
+body .container_contact .text_box {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+body .container_contact textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  opacity: 0.9;
+  width: 98%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+}
+
+body .container_contact .send_btn {
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-property: background;
+  transition-property: background;
+  cursor: pointer;
+}
+
+body .container_contact .send_btn :hover {
+  background: #000;
+}
+
+.mapa {
+  margin-top: 36rem;
+}
+
+.alert_success {
+  z-index: 4;
+  background: #d4edda;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3ad66e;
+  border-radius: 4px;
+}
+
+.alert_error {
+  z-index: 4;
+  background: #d4edda;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3ad66e;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 950px) {
+  .contact_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contact_form .text_box {
+    width: 100%;
+  }
+  .container_contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+  }
+}
+
+.aboutus_header {
+  width: 100%;
+  padding: 2em 0 3em 0;
+  background-color: beige;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+body header {
+  width: 100%;
+  height: 24vh;
+  -webkit-box-shadow: 0px 5px 10px -9px #8c8c8c;
+          box-shadow: 0px 5px 10px -9px #8c8c8c;
+  background: white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+body nav {
+  /* no hace falta especifiarle un width en este caso porque queremos que ocupe el 100 por cien del contenedor*/
+  height: 15vh;
+  margin: 0rem 1rem 0rem 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+body nav ul li {
+  color: black;
+  background: none;
+}
+
+body nav ul li a:hover {
+  background-color: none;
+  color: #732727;
+}
+
+body nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #732727;
+}
+
+body nav ul li a:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+body .menu__ul {
+  position: relative;
+  width: 60%;
+}
+
+body .menu__logo {
+  width: 250px;
+  height: 100px;
+}
+
+body .icon.open {
+  display: none;
+}
+
+body .close {
+  font-size: 2rem;
+  display: none;
+}
+
+body .div_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div {
+  text-align: center;
+  margin: auto;
+}
+
+body hr {
+  width: 100%;
+}
+
+body .hero {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 45vh;
+  background-color: beige;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+}
+
+footer .contenedor {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  /* Evito dar los márgenes de cada uno de los elementos html */
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* Lo divido en tres columnas del mismo tamaño */
+  /* grid-template-columns: repeat(3, 1fr); Otra forma de escribir lo de arriba */
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  /*Dónde quiero que comience y que termine*/
+}
+
+footer .footer__box {
+  width: 65%;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 2rem;
+  margin-top: 3rem;
+  background-color: beige;
+  color: black;
+}
+
+footer .box1 {
+  width: 85%;
+}
+
+footer .icon {
+  margin: 10px 0px 0px 0px;
+  color: black;
+}
+
+footer .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer .txt {
+  font-size: 1rem;
+}
+
+footer .LogoFooter img {
+  width: 200px;
+  height: 200px;
+  display: Flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .izq {
+  text-align: left;
+}
+
+footer .m-top {
+  margin-top: 1rem;
+}
+
+footer label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+footer label input {
+  margin-top: .1rem;
+}
+/*# sourceMappingURL=style.css.map */

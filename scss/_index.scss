@@ -1,0 +1,106 @@
+body {
+
+    h1 {
+        text-align: center;
+        padding-top: 7rem;
+    }
+
+
+    .banner {
+        width: 100%;
+
+        .banner_img {
+            width: 100%;
+            height: 130vh;
+            background-image: url("../multimedia/background1.jpg");
+            background-size: cover;
+            margin-top: 8rem;
+
+        }
+    }
+
+    .favoritos {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3em 0 5em 0;
+
+        .grid_container {
+            display: grid;
+            width: 80%;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+            grid-template-rows: repeat(3, auto);
+            column-gap: 1em;
+            row-gap: 1em;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+
+            h1 {
+                margin-bottom: 1rem;
+                font-size: 1.5em;
+                grid-column: 1 / -1;
+                font-weight: 500;
+                text-align: center;
+                /*grid-row: span 3;  Me toma dos rows/filas, para no calcular los números de filas */
+            }
+
+            .grid_item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+
+
+                .grid_item_img1 {
+                    display: block;
+                    max-width: 350px;
+                    height: 300px;
+                    overflow: hidden;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    cursor: pointer;
+
+                    p {
+                    
+                    }
+    
+                }
+    
+                .grid_item_img2 {
+                    display: block;
+                    max-width: 350px;
+                    height: 300px;
+                    overflow: hidden;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    cursor: pointer;
+
+                    p {
+                    
+                    }
+    
+                }
+    
+                .grid_item_img3 {
+                    display: block;
+                    max-width: 350px;
+                    height: 300px;
+                    overflow: hidden;
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                    cursor: pointer;
+
+                    p {
+                    
+                    }
+    
+                }
+            }
+
+            
+        }
+    }
+    }
